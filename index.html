@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Rhadith</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Toko Rhadith</h1>
+    <marquee>Promo Diskon 20% untuk pembelian bulan ini!</marquee>
+</header>
+
+<nav>
+    <a href="index.html">Produk</a>
+    <a href="kontak.html">Kontak Kami</a>
+</nav>
+
+<div class="container">
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar left-sidebar">
+        <h3>Tentang Toko</h3>
+        <img src="img/toko.jpg" alt="Toko Rhadith">
+        <p>Selamat datang di toko kami! Kami menyediakan berbagai produk berkualitas dengan harga terjangkau.</p>
+        
+        <h3>Beli Langsung</h3>
+        <form action="transaksi.html" method="GET">
+            <label for="produk">Pilih Produk:</label>
+            <select name="produk" id="produk">
+                <option value="Produk A">Produk A - Rp50.000</option>
+                <option value="Produk B">Produk B - Rp75.000</option>
+            </select>
+
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" name="jumlah" id="jumlah" min="1" value="1">
+
+            <button type="submit">Beli Sekarang</button>
+        </form>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <h2>Produk Kami</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="makan.jpg" alt="Produk 1">
+                <p>Produk A - Rp50.000</p>
+                <button onclick="window.location.href='transaksi.html?produk=Produk%20A'">Beli</button>
+            </div>
+            <div class="product">
+                <img src="minum.jpg" alt="Produk 2">
+                <p>Produk B - Rp75.000</p>
+                <button onclick="window.location.href='transaksi.html?produk=Produk%20B'">Beli</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="sidebar right-sidebar">
+        <h3>Promo</h3>
+        <img src="img/promo.jpg" alt="Promo Spesial">
+        <p>Gratis ongkir untuk pembelian minimal Rp100.000!</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Toko Rhadith</p>
+</footer>
+
+</body>
+</html>

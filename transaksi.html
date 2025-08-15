@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Form Pemesanan</h1>
+</header>
+
+<nav>
+    <a href="index.html">Produk</a>
+    <a href="kontak.html">Kontak Kami</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">Left Sidebar</div>
+
+    <div class="content">
+        <form>
+            <label>Nama:</label><br>
+            <input type="text" id="nama"><br><br>
+
+            <label>Produk:</label><br>
+            <input type="text" id="produk"><br><br>
+
+            <label>Jumlah:</label><br>
+            <input type="number" id="jumlah"><br><br>
+
+            <label>Alamat:</label><br>
+            <textarea id="alamat"></textarea><br><br>
+
+            <button type="button" onclick="buatPesanan()">Buat Pesanan</button>
+        </form>
+    </div>
+
+    <div class="sidebar">Right Sidebar</div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Toko Online</p>
+</footer>
+
+</body>
+</html>
