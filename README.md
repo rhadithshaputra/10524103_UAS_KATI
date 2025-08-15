@@ -1,0 +1,2 @@
+# 10524103_UAS_KATI
+tugas UAS kati
